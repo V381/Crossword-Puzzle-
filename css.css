@@ -1,0 +1,103 @@
+body {
+    background-color: #444;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  h1::first-letter {
+    color: red;
+  }
+  
+  .crossword {
+    display: inline-block;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #fff;
+  }
+  
+  .crossword td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 0;
+  }
+  
+  .crossword td.dark {
+    background-color: #666;
+  }
+  
+  .crossword td.input-cell {
+    background-color: #444;
+  }
+  
+  .crossword input {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+  
+  .crossword input::placeholder {
+    color: #aaa;
+  }
+  
+  .crossword .correct {
+    background-color: darkgreen !important;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .crossword .correct.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .crossword .incorrect {
+    background-color: darkred !important;
+  }
+  
+  .button {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #666;
+  }
+  
+  .select-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .select-wrapper select {
+    width: 200px;
+    padding: 10px;
+    padding-right: 30px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+
+  .flip-animation {
+    transform: rotateY(180deg);
+  }
